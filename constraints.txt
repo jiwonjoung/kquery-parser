@@ -1,0 +1,28 @@
+PRINTING------------------------:
+ : (Eq 333
+       (ReadLSB w32 0 a))
+PRINTING------------------------:
+ : (Eq false
+       (Eq 333
+           (ReadLSB w32 0 a)))
+: (Eq false
+       (Slt (ReadLSB w32 0 a)
+            888))
+: (Slt (ReadLSB w32 0 a)
+        999)
+PRINTING------------------------:
+ : (Eq false
+       (Eq 333
+           (ReadLSB w32 0 a)))
+: (Eq false
+       (Slt (ReadLSB w32 0 a)
+            888))
+: (Eq false
+       (Slt (ReadLSB w32 0 a)
+            999))
+PRINTING------------------------:
+ : (Eq false
+       (Eq 333
+           (ReadLSB w32 0 a)))
+: (Slt (ReadLSB w32 0 a)
+        888)
